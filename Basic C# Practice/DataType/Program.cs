@@ -14,6 +14,22 @@ uint days = 73040;
 ulong hours = 174542321;
 
 Console.WriteLine($"Centuries {centuries}, Years {years}, Days {days}, Hours {hours}");
-
 Console.WriteLine("-------------------------------------------------------");
+#endregion
+
+# region Floating Point Types
+Console.WriteLine($"float range form {float.MinValue} to {float.MaxValue}");
+Console.WriteLine($"double range form {double.MinValue} to {double.MaxValue}");
+Console.WriteLine($"decimal range form {decimal.MinValue} to {decimal.MaxValue}");
+
+float num1 = 0.123456789f;
+double num2 = 0.123456789123456789123;
+decimal num3 = 0.123456789123456789123456789123456789m;
+
+Console.WriteLine(num1);
+Console.WriteLine(num2);
+Console.WriteLine(num3);
+Console.WriteLine(0.0f/0.0f);
+Console.WriteLine(-0.1f/0.0f);
+Console.WriteLine(0.1f / 0.0f);
 #endregion
