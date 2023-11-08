@@ -30,33 +30,58 @@ namespace EvenOdd
             {
                 int num1 = Convert.ToInt32(num1TxtBox.Text);
                 int num2 = Convert.ToInt32(num2TxtBox.Text);
-                string evenString = "";
-                if(evenBttnClicked)
+                if (num1 > num2 || num1==num2)
                 {
-                    for(int i=num1; i<num2 ; i++)
+                    MessageBox.Show("Number 1 must be greater than Number 2");
+                }
+                else
+                {
+                    string evenString = "";
+                    string oddString = "";
+                    if (evenBttnClicked)
                     {
-                        if(i%2==0)
+                        for (int i = num1; i < num2; i++)
                         {
-                            evenString += i + " ";
-                        }
+                            if (i % 2 == 0)
+                            {
+                                evenString += i + " ";
+                            }
+                        }                 
+                        MessageBox.Show(evenString);
                     }
-                    MessageBox.Show(evenString);
+
+                    else if (oddBttnClicked)
+                    {
+                        for (int i = num1; i < num2; i++)
+                        {
+                            if (i % 2 != 0)
+                            {
+                                oddString += i + " ";
+                            }
+                        }                      
+                        MessageBox.Show(oddString);
+                    }
                 }
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Input Fild can't be empty and input must be numeric", ex.Message);   
             }
         }
+
         private void evenBtn_Click(object sender, EventArgs e)
         {
             evenBttnClicked=true;
             OddEvenFinder();
+            evenBttnClicked = false;
         }
 
         private void oddBtn_Click(object sender, EventArgs e)
         {
             oddBttnClicked=true;
+            OddEvenFinder();
+            oddBttnClicked = false;
         }
     }
 }
