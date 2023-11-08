@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleArithmetic", "SimpleA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenOdd", "EvenOdd\EvenOdd.csproj", "{74CCB237-6906-4BEE-B694-990E6EA6BF3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodPractice", "MethodPractice\MethodPractice.csproj", "{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{74CCB237-6906-4BEE-B694-990E6EA6BF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74CCB237-6906-4BEE-B694-990E6EA6BF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74CCB237-6906-4BEE-B694-990E6EA6BF3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
