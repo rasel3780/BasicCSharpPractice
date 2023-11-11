@@ -32,7 +32,6 @@ namespace ListBoxExample
 
             nameTextBox.Text = "";
             contactTextBox.Text = "";
-            
         }
 
         private void clearButton_Click(object sender, EventArgs e)
