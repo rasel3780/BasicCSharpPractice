@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryExample", "Dictio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedTypeExample", "UserDefinedTypeExample\UserDefinedTypeExample.csproj", "{38AF9EB8-BC31-4827-8AF9-6B9788BC8A81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedTypeExample2", "UserDefinedTypeExample2\UserDefinedTypeExample2.csproj", "{BF34C36F-70DE-4A0E-B9D4-E828E1F2B120}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{38AF9EB8-BC31-4827-8AF9-6B9788BC8A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38AF9EB8-BC31-4827-8AF9-6B9788BC8A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38AF9EB8-BC31-4827-8AF9-6B9788BC8A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF34C36F-70DE-4A0E-B9D4-E828E1F2B120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF34C36F-70DE-4A0E-B9D4-E828E1F2B120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF34C36F-70DE-4A0E-B9D4-E828E1F2B120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF34C36F-70DE-4A0E-B9D4-E828E1F2B120}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
