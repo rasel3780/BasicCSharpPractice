@@ -1,8 +1,4 @@
-﻿
-
-
-
-static void ShowName(string name)
+﻿static void ShowName(string name)
 {
     Console.WriteLine(name);
 }

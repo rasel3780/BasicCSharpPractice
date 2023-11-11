@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleArithmetic", "SimpleA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenOdd", "EvenOdd\EvenOdd.csproj", "{74CCB237-6906-4BEE-B694-990E6EA6BF3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodPractice", "MethodPractice\MethodPractice.csproj", "{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodPractice", "MethodPractice\MethodPractice.csproj", "{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryListComboBox", "CountryListComboBox\CountryListComboBox.csproj", "{82D50093-30A4-4C70-86D0-71C52E0C453A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E0F7E0E-37C1-46CA-BDD8-983087AC6457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D50093-30A4-4C70-86D0-71C52E0C453A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D50093-30A4-4C70-86D0-71C52E0C453A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D50093-30A4-4C70-86D0-71C52E0C453A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D50093-30A4-4C70-86D0-71C52E0C453A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
