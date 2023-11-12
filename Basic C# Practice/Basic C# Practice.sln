@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTypeAndReferenceTypeEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTypeAndReferenceTypeExample2", "ValueTypeAndReferenceTypeExample2\ValueTypeAndReferenceTypeExample2.csproj", "{493EF8C7-B539-4B79-B377-B2EF49F4F61F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceOfPrimitiveTypeExample", "ReferenceOfPrimitiveTypeExample\ReferenceOfPrimitiveTypeExample.csproj", "{C037E673-44CB-41B8-AFF8-26209C75C61D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{493EF8C7-B539-4B79-B377-B2EF49F4F61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{493EF8C7-B539-4B79-B377-B2EF49F4F61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{493EF8C7-B539-4B79-B377-B2EF49F4F61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C037E673-44CB-41B8-AFF8-26209C75C61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C037E673-44CB-41B8-AFF8-26209C75C61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C037E673-44CB-41B8-AFF8-26209C75C61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C037E673-44CB-41B8-AFF8-26209C75C61D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
