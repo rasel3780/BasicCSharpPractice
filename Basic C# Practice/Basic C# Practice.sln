@@ -27,11 +27,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedTypeExample", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedTypeExample2", "UserDefinedTypeExample2\UserDefinedTypeExample2.csproj", "{BF34C36F-70DE-4A0E-B9D4-E828E1F2B120}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTypeAndReferenceTypeExample", "ValueTypeAndReferenceTypeExample\ValueTypeAndReferenceTypeExample.csproj", "{53A857FC-0E12-44B4-A503-69E65CD624DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueTypeAndReferenceTypeExample", "ValueTypeAndReferenceTypeExample\ValueTypeAndReferenceTypeExample.csproj", "{53A857FC-0E12-44B4-A503-69E65CD624DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTypeAndReferenceTypeExample2", "ValueTypeAndReferenceTypeExample2\ValueTypeAndReferenceTypeExample2.csproj", "{493EF8C7-B539-4B79-B377-B2EF49F4F61F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueTypeAndReferenceTypeExample2", "ValueTypeAndReferenceTypeExample2\ValueTypeAndReferenceTypeExample2.csproj", "{493EF8C7-B539-4B79-B377-B2EF49F4F61F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceOfPrimitiveTypeExample", "ReferenceOfPrimitiveTypeExample\ReferenceOfPrimitiveTypeExample.csproj", "{C037E673-44CB-41B8-AFF8-26209C75C61D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceOfPrimitiveTypeExample", "ReferenceOfPrimitiveTypeExample\ReferenceOfPrimitiveTypeExample.csproj", "{C037E673-44CB-41B8-AFF8-26209C75C61D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Person_Example", "OOP_Person_Example\OOP_Person_Example.csproj", "{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{C037E673-44CB-41B8-AFF8-26209C75C61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C037E673-44CB-41B8-AFF8-26209C75C61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C037E673-44CB-41B8-AFF8-26209C75C61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
