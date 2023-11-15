@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceOfPrimitiveTypeExa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Person_Example", "OOP_Person_Example\OOP_Person_Example.csproj", "{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Bank_Account_Example", "OOP_Bank_Account_Example\OOP_Bank_Account_Example.csproj", "{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA73B0E5-F15B-4F66-812A-20C1AC68FCCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
