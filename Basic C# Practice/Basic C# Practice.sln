@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Person_Example", "OOP_P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Bank_Account_Example", "OOP_Bank_Account_Example\OOP_Bank_Account_Example.csproj", "{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{0D024701-B3C9-48E8-A4D7-DB98269D9D80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E241233C-BFC2-4654-ADA4-59FB0BC26BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D024701-B3C9-48E8-A4D7-DB98269D9D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D024701-B3C9-48E8-A4D7-DB98269D9D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D024701-B3C9-48E8-A4D7-DB98269D9D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D024701-B3C9-48E8-A4D7-DB98269D9D80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -34,10 +34,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.subButton = new System.Windows.Forms.Button();
+            this.mulButton = new System.Windows.Forms.Button();
+            this.divButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstNumberTextBox
@@ -64,75 +64,94 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(255, 118);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(228, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 16);
+            this.label1.Size = new System.Drawing.Size(116, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "First Number";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 161);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(206, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 16);
+            this.label2.Size = new System.Drawing.Size(143, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Second Number";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(293, 207);
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(284, 201);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 16);
+            this.label3.Size = new System.Drawing.Size(60, 23);
             this.label3.TabIndex = 1;
             this.label3.Text = "Result";
             // 
-            // button1
+            // subButton
             // 
-            this.button1.Location = new System.Drawing.Point(258, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.subButton.BackColor = System.Drawing.Color.White;
+            this.subButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subButton.Location = new System.Drawing.Point(360, 261);
+            this.subButton.Name = "subButton";
+            this.subButton.Size = new System.Drawing.Size(75, 34);
+            this.subButton.TabIndex = 2;
+            this.subButton.Text = "-";
+            this.subButton.UseVisualStyleBackColor = false;
+            this.subButton.Click += new System.EventHandler(this.subButton_Click);
             // 
-            // button2
+            // mulButton
             // 
-            this.button2.Location = new System.Drawing.Point(360, 298);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
+            this.mulButton.BackColor = System.Drawing.Color.White;
+            this.mulButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mulButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mulButton.Location = new System.Drawing.Point(463, 261);
+            this.mulButton.Name = "mulButton";
+            this.mulButton.Size = new System.Drawing.Size(75, 34);
+            this.mulButton.TabIndex = 2;
+            this.mulButton.Text = "x";
+            this.mulButton.UseVisualStyleBackColor = false;
+            this.mulButton.Click += new System.EventHandler(this.mulButton_Click);
             // 
-            // button3
+            // divButton
             // 
-            this.button3.Location = new System.Drawing.Point(463, 298);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "x";
-            this.button3.UseVisualStyleBackColor = true;
+            this.divButton.BackColor = System.Drawing.Color.White;
+            this.divButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.divButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divButton.Location = new System.Drawing.Point(561, 261);
+            this.divButton.Name = "divButton";
+            this.divButton.Size = new System.Drawing.Size(75, 34);
+            this.divButton.TabIndex = 2;
+            this.divButton.Text = "/";
+            this.divButton.UseVisualStyleBackColor = false;
+            this.divButton.Click += new System.EventHandler(this.divButton_Click);
             // 
-            // button4
+            // addButton
             // 
-            this.button4.Location = new System.Drawing.Point(561, 298);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "/";
-            this.button4.UseVisualStyleBackColor = true;
+            this.addButton.BackColor = System.Drawing.Color.White;
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Location = new System.Drawing.Point(260, 261);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 34);
+            this.addButton.TabIndex = 2;
+            this.addButton.Text = "+";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.divButton);
+            this.Controls.Add(this.mulButton);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.subButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -156,10 +175,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button subButton;
+        private System.Windows.Forms.Button mulButton;
+        private System.Windows.Forms.Button divButton;
+        private System.Windows.Forms.Button addButton;
     }
 }
 
