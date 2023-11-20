@@ -113,6 +113,7 @@
             this.showButton.TabIndex = 2;
             this.showButton.Text = "Show Total";
             this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // label5
             // 

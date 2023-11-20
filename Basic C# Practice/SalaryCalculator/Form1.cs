@@ -22,9 +22,15 @@ namespace SalaryCalculator
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void showButton_Click(object sender, EventArgs e)
         {
+            Employee employee = new Employee();
+            employee.employeeName = empNameTextBox.Text;
+            employee.basicAmount = Convert.ToDouble(basicAmountTextBox.Text);
+            employee.houseRentPercentage = Convert.ToDouble(houseRentTextBox.Text);
+            employee.medicalAllowancePercentage = Convert.ToDouble(medicalAllowanceTextBox.Text);
 
+            MessageBox.Show(employee.employeeName + "\n" + employee.GetTotalSallary());
         }
     }
 }
