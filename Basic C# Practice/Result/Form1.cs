@@ -26,5 +26,25 @@ namespace Result
         {
             Application.Exit();
         }
+
+        private void showResultButton_Click(object sender, EventArgs e)
+        {
+            GradeCalculator gradeCalculator = new GradeCalculator();
+       
+            double mathScore = Convert.ToDouble(mathTextBox.Text);
+            double physicScore = Convert.ToDouble(physicsTextBox.Text);
+            double chemistryScore = Convert.ToDouble(chemistryTextBox.Text);
+
+            gradeCalculator.mathScore = mathScore;
+            gradeCalculator.physicsScore = physicScore;
+            gradeCalculator.chemistryScore = chemistryScore;
+
+            mathGradeTextBox.Text = gradeCalculator.GetMathGrade();
+            chemistryGradeTextBox.Text = gradeCalculator.GetChemistryGrade();
+            physicsGradeTextBox.Text = gradeCalculator.GetPhysicsGrade();
+
+            averageScoreTextBox.Text = gradeCalculator.GetAvgScore().ToString();
+            overallGradeTextBox.Text = gradeCalculator.GetOverallGrade();
+        }
     }
 }

@@ -113,6 +113,7 @@
             this.showResultButton.TabIndex = 1;
             this.showResultButton.Text = "Show Result";
             this.showResultButton.UseVisualStyleBackColor = false;
+            this.showResultButton.Click += new System.EventHandler(this.showResultButton_Click);
             // 
             // label1
             // 
