@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListOfObject", "ListOfObjec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubMemberInformation", "ClubMemberInformation\ClubMemberInformation.csproj", "{61C3F4CC-3B78-446E-93AF-E71F5721041A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static_Class_Method", "Static_Class_Method\Static_Class_Method.csproj", "{F105FEA1-2200-41FE-88CD-3211FE8D1A9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{61C3F4CC-3B78-446E-93AF-E71F5721041A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61C3F4CC-3B78-446E-93AF-E71F5721041A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61C3F4CC-3B78-446E-93AF-E71F5721041A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F105FEA1-2200-41FE-88CD-3211FE8D1A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F105FEA1-2200-41FE-88CD-3211FE8D1A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F105FEA1-2200-41FE-88CD-3211FE8D1A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F105FEA1-2200-41FE-88CD-3211FE8D1A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
