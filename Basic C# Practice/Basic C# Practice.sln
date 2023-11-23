@@ -47,7 +47,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Result", "Result\Result.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{15575C09-9CF3-48D9-93C4-389394CCF7D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overloading_Method_Constructor", "Overloading_Method_Constructor\Overloading_Method_Constructor.csproj", "{EC822180-9425-4245-BB79-7AE3B6F792C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Overloading_Method_Constructor", "Overloading_Method_Constructor\Overloading_Method_Constructor.csproj", "{EC822180-9425-4245-BB79-7AE3B6F792C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListOfObject", "ListOfObject\ListOfObject.csproj", "{316DC30D-DE03-47ED-BFDB-DB0FFD1EA62D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{EC822180-9425-4245-BB79-7AE3B6F792C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC822180-9425-4245-BB79-7AE3B6F792C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC822180-9425-4245-BB79-7AE3B6F792C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{316DC30D-DE03-47ED-BFDB-DB0FFD1EA62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316DC30D-DE03-47ED-BFDB-DB0FFD1EA62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316DC30D-DE03-47ED-BFDB-DB0FFD1EA62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316DC30D-DE03-47ED-BFDB-DB0FFD1EA62D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
