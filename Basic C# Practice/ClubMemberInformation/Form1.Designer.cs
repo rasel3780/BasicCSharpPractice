@@ -90,6 +90,7 @@
             this.saveButton.TabIndex = 2;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // showButton
             // 
@@ -99,6 +100,7 @@
             this.showButton.TabIndex = 2;
             this.showButton.Text = "Show All";
             this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // monthlyFeeRadioButton
             // 
