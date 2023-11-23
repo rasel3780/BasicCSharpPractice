@@ -13,20 +13,12 @@ namespace ClubMemberInformation
         public string PaymentInfo { get; set; }
         public string MembershipType { get; set; }
 
-        public ClubMember()
-        {
-            Name = "Unknown";
-            ContactNo = "Unknown";
-            PaymentInfo = "Unknown";
-            MembershipType = "Unknown";
-        }
-
         public ClubMember(string name, string contactNo, string paymentInfo, string membershipType)
         {
             Name = name;
             ContactNo = contactNo;
             PaymentInfo = paymentInfo;
-            MembershipType = membershipType;
+            MembershipType = membershipType; 
         }
     }
 }
