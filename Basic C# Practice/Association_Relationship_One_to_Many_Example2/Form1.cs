@@ -42,19 +42,28 @@ namespace Association_Relationship_One_to_Many_Example2
         private void productSaveButton_Click(object sender, EventArgs e)
         {
             Product product = new Product();
-            product.Code = productCodeTextBox.Text;
-            product.Quantity = Convert.ToInt32(productQuantityTextBox.Text);
-            aShop.productList.Add(product);
+            product.Code = productCodeTextBox.Text.ToUpper();
+            bool checkCode = aShop.SameProductCode(product.Code);
+            if(checkCode)
+            {
+                aShop.UpdateQuantity(product.Code, Convert.ToInt32(productQuantityTextBox.Text));
+            }
+            else
+            {
+                product.Quantity = Convert.ToInt32(productQuantityTextBox.Text);
+                aShop.ProductList.Add(product);
+            }
+
             MessageBox.Show("Product has been added");
         }
 
         private void showButton_Click(object sender, EventArgs e)
         {
             showShopNameTextBox.Text = aShop.Name;
-            showNumberOfProductTextBox.Text = aShop.productList.Count.ToString();
+            showNumberOfProductTextBox.Text = aShop.ProductList.Count.ToString();
             
             productListBox.Items.Clear();
-            foreach(Product product in aShop.productList)
+            foreach(Product product in aShop.ProductList)
             {
                 productListBox.Items.Add(product.Code+"\t"+ product.Quantity);
             }

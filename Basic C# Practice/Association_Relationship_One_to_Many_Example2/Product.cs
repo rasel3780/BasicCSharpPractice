@@ -10,5 +10,7 @@ namespace Association_Relationship_One_to_Many_Example2
     {
         public string Code { get; set; }
         public int Quantity { get; set; }
+
+        
     }
 }
