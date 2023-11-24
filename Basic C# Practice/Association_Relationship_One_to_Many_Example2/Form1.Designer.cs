@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.shopNameTextBox = new System.Windows.Forms.TextBox();
+            this.shopAddressTextBox = new System.Windows.Forms.TextBox();
+            this.productCodeTextBox = new System.Windows.Forms.TextBox();
+            this.productQuantityTextBox = new System.Windows.Forms.TextBox();
             this.showShopNameTextBox = new System.Windows.Forms.TextBox();
-            this.numberOfProductTextBox = new System.Windows.Forms.TextBox();
+            this.showNumberOfProductTextBox = new System.Windows.Forms.TextBox();
             this.productListBox = new System.Windows.Forms.ListBox();
             this.shopSaveButton = new System.Windows.Forms.Button();
             this.productSaveButton = new System.Windows.Forms.Button();
@@ -48,33 +48,33 @@
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // shopNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 22);
-            this.textBox1.TabIndex = 0;
+            this.shopNameTextBox.Location = new System.Drawing.Point(136, 92);
+            this.shopNameTextBox.Name = "shopNameTextBox";
+            this.shopNameTextBox.Size = new System.Drawing.Size(195, 22);
+            this.shopNameTextBox.TabIndex = 0;
             // 
-            // textBox2
+            // shopAddressTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 139);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 22);
-            this.textBox2.TabIndex = 0;
+            this.shopAddressTextBox.Location = new System.Drawing.Point(136, 139);
+            this.shopAddressTextBox.Name = "shopAddressTextBox";
+            this.shopAddressTextBox.Size = new System.Drawing.Size(195, 22);
+            this.shopAddressTextBox.TabIndex = 0;
             // 
-            // textBox3
+            // productCodeTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(136, 251);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 22);
-            this.textBox3.TabIndex = 0;
+            this.productCodeTextBox.Location = new System.Drawing.Point(136, 251);
+            this.productCodeTextBox.Name = "productCodeTextBox";
+            this.productCodeTextBox.Size = new System.Drawing.Size(195, 22);
+            this.productCodeTextBox.TabIndex = 0;
             // 
-            // textBox4
+            // productQuantityTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(136, 295);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 22);
-            this.textBox4.TabIndex = 0;
+            this.productQuantityTextBox.Location = new System.Drawing.Point(136, 295);
+            this.productQuantityTextBox.Name = "productQuantityTextBox";
+            this.productQuantityTextBox.Size = new System.Drawing.Size(195, 22);
+            this.productQuantityTextBox.TabIndex = 0;
             // 
             // showShopNameTextBox
             // 
@@ -83,12 +83,12 @@
             this.showShopNameTextBox.Size = new System.Drawing.Size(246, 22);
             this.showShopNameTextBox.TabIndex = 0;
             // 
-            // numberOfProductTextBox
+            // showNumberOfProductTextBox
             // 
-            this.numberOfProductTextBox.Location = new System.Drawing.Point(559, 139);
-            this.numberOfProductTextBox.Name = "numberOfProductTextBox";
-            this.numberOfProductTextBox.Size = new System.Drawing.Size(246, 22);
-            this.numberOfProductTextBox.TabIndex = 0;
+            this.showNumberOfProductTextBox.Location = new System.Drawing.Point(559, 139);
+            this.showNumberOfProductTextBox.Name = "showNumberOfProductTextBox";
+            this.showNumberOfProductTextBox.Size = new System.Drawing.Size(246, 22);
+            this.showNumberOfProductTextBox.TabIndex = 0;
             // 
             // productListBox
             // 
@@ -107,6 +107,7 @@
             this.shopSaveButton.TabIndex = 2;
             this.shopSaveButton.Text = "Save";
             this.shopSaveButton.UseVisualStyleBackColor = true;
+            this.shopSaveButton.Click += new System.EventHandler(this.shopSaveButton_Click);
             // 
             // productSaveButton
             // 
@@ -116,6 +117,7 @@
             this.productSaveButton.TabIndex = 2;
             this.productSaveButton.Text = "Save";
             this.productSaveButton.UseVisualStyleBackColor = true;
+            this.productSaveButton.Click += new System.EventHandler(this.productSaveButton_Click);
             // 
             // showButton
             // 
@@ -125,6 +127,7 @@
             this.showButton.TabIndex = 2;
             this.showButton.Text = "Show";
             this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // label1
             // 
@@ -220,12 +223,12 @@
             this.Controls.Add(this.productSaveButton);
             this.Controls.Add(this.shopSaveButton);
             this.Controls.Add(this.productListBox);
-            this.Controls.Add(this.numberOfProductTextBox);
+            this.Controls.Add(this.showNumberOfProductTextBox);
             this.Controls.Add(this.showShopNameTextBox);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.productQuantityTextBox);
+            this.Controls.Add(this.productCodeTextBox);
+            this.Controls.Add(this.shopAddressTextBox);
+            this.Controls.Add(this.shopNameTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -237,12 +240,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox shopNameTextBox;
+        private System.Windows.Forms.TextBox shopAddressTextBox;
+        private System.Windows.Forms.TextBox productCodeTextBox;
+        private System.Windows.Forms.TextBox productQuantityTextBox;
         private System.Windows.Forms.TextBox showShopNameTextBox;
-        private System.Windows.Forms.TextBox numberOfProductTextBox;
+        private System.Windows.Forms.TextBox showNumberOfProductTextBox;
         private System.Windows.Forms.ListBox productListBox;
         private System.Windows.Forms.Button shopSaveButton;
         private System.Windows.Forms.Button productSaveButton;

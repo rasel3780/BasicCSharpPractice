@@ -31,5 +31,33 @@ namespace Association_Relationship_One_to_Many_Example2
         {
 
         }
+        Shop aShop = new Shop();
+        private void shopSaveButton_Click(object sender, EventArgs e)
+        {
+            aShop.Name = shopNameTextBox.Text;
+            aShop.Address = shopAddressTextBox.Text;
+            MessageBox.Show("Shop has been added");
+        }
+
+        private void productSaveButton_Click(object sender, EventArgs e)
+        {
+            Product product = new Product();
+            product.Code = productCodeTextBox.Text;
+            product.Quantity = Convert.ToInt32(productQuantityTextBox.Text);
+            aShop.productList.Add(product);
+            MessageBox.Show("Product has been added");
+        }
+
+        private void showButton_Click(object sender, EventArgs e)
+        {
+            showShopNameTextBox.Text = aShop.Name;
+            showNumberOfProductTextBox.Text = aShop.productList.Count.ToString();
+            
+            productListBox.Items.Clear();
+            foreach(Product product in aShop.productList)
+            {
+                productListBox.Items.Add(product.Code+"\t"+ product.Quantity);
+            }
+        }
     }
 }
