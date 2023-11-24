@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Association_Relationship_On
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Association_Relationship_One_To_One_Example2", "Association_Relationship_One_To_One_Example2\Association_Relationship_One_To_One_Example2.csproj", "{299E67D4-38E9-4C81-9531-268D59D9E273}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Association_Relationship_One_to_Many", "Association_Relationship_One_to_Many\Association_Relationship_One_to_Many.csproj", "{ABBE98E1-332D-4EF9-877A-312C43FEFF73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{299E67D4-38E9-4C81-9531-268D59D9E273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{299E67D4-38E9-4C81-9531-268D59D9E273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{299E67D4-38E9-4C81-9531-268D59D9E273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABBE98E1-332D-4EF9-877A-312C43FEFF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBE98E1-332D-4EF9-877A-312C43FEFF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBE98E1-332D-4EF9-877A-312C43FEFF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBE98E1-332D-4EF9-877A-312C43FEFF73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
