@@ -56,6 +56,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.showTotalTextBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // idTextBox
@@ -95,49 +99,49 @@
             // 
             // conveyanceTextBox
             // 
-            this.conveyanceTextBox.Location = new System.Drawing.Point(141, 359);
+            this.conveyanceTextBox.Location = new System.Drawing.Point(141, 352);
             this.conveyanceTextBox.Name = "conveyanceTextBox";
             this.conveyanceTextBox.Size = new System.Drawing.Size(207, 22);
             this.conveyanceTextBox.TabIndex = 0;
             // 
             // showIdTextBox
             // 
-            this.showIdTextBox.Location = new System.Drawing.Point(531, 79);
+            this.showIdTextBox.Location = new System.Drawing.Point(635, 79);
             this.showIdTextBox.Name = "showIdTextBox";
             this.showIdTextBox.Size = new System.Drawing.Size(207, 22);
             this.showIdTextBox.TabIndex = 0;
             // 
             // showNameTextBox
             // 
-            this.showNameTextBox.Location = new System.Drawing.Point(531, 124);
+            this.showNameTextBox.Location = new System.Drawing.Point(635, 124);
             this.showNameTextBox.Name = "showNameTextBox";
             this.showNameTextBox.Size = new System.Drawing.Size(207, 22);
             this.showNameTextBox.TabIndex = 0;
             // 
             // showEmailTextBox
             // 
-            this.showEmailTextBox.Location = new System.Drawing.Point(531, 172);
+            this.showEmailTextBox.Location = new System.Drawing.Point(635, 172);
             this.showEmailTextBox.Name = "showEmailTextBox";
             this.showEmailTextBox.Size = new System.Drawing.Size(207, 22);
             this.showEmailTextBox.TabIndex = 0;
             // 
             // showBasicTextBox
             // 
-            this.showBasicTextBox.Location = new System.Drawing.Point(531, 214);
+            this.showBasicTextBox.Location = new System.Drawing.Point(635, 214);
             this.showBasicTextBox.Name = "showBasicTextBox";
             this.showBasicTextBox.Size = new System.Drawing.Size(207, 22);
             this.showBasicTextBox.TabIndex = 0;
             // 
             // showMedicalTextBox
             // 
-            this.showMedicalTextBox.Location = new System.Drawing.Point(531, 256);
+            this.showMedicalTextBox.Location = new System.Drawing.Point(635, 256);
             this.showMedicalTextBox.Name = "showMedicalTextBox";
             this.showMedicalTextBox.Size = new System.Drawing.Size(207, 22);
             this.showMedicalTextBox.TabIndex = 0;
             // 
             // showConveyanceTextBox
             // 
-            this.showConveyanceTextBox.Location = new System.Drawing.Point(531, 308);
+            this.showConveyanceTextBox.Location = new System.Drawing.Point(635, 308);
             this.showConveyanceTextBox.Name = "showConveyanceTextBox";
             this.showConveyanceTextBox.Size = new System.Drawing.Size(207, 22);
             this.showConveyanceTextBox.TabIndex = 0;
@@ -150,15 +154,17 @@
             this.saveButton.TabIndex = 1;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // showButton
             // 
-            this.showButton.Location = new System.Drawing.Point(595, 358);
+            this.showButton.Location = new System.Drawing.Point(689, 403);
             this.showButton.Name = "showButton";
             this.showButton.Size = new System.Drawing.Size(75, 23);
             this.showButton.TabIndex = 1;
             this.showButton.Text = "Show";
             this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // label1
             // 
@@ -214,7 +220,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(38, 361);
+            this.label6.Location = new System.Drawing.Point(38, 354);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(97, 20);
             this.label6.TabIndex = 2;
@@ -224,7 +230,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(502, 81);
+            this.label7.Location = new System.Drawing.Point(606, 81);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(23, 20);
             this.label7.TabIndex = 2;
@@ -234,7 +240,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(473, 126);
+            this.label8.Location = new System.Drawing.Point(577, 126);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 20);
             this.label8.TabIndex = 2;
@@ -244,7 +250,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(480, 216);
+            this.label9.Location = new System.Drawing.Point(584, 216);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(45, 20);
             this.label9.TabIndex = 2;
@@ -254,7 +260,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(478, 174);
+            this.label10.Location = new System.Drawing.Point(582, 174);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 20);
             this.label10.TabIndex = 2;
@@ -264,7 +270,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(458, 256);
+            this.label11.Location = new System.Drawing.Point(562, 256);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(67, 20);
             this.label11.TabIndex = 2;
@@ -274,7 +280,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(428, 307);
+            this.label12.Location = new System.Drawing.Point(532, 307);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 20);
             this.label12.TabIndex = 2;
@@ -300,11 +306,49 @@
             this.label14.TabIndex = 2;
             this.label14.Text = "Employee Information";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(582, 350);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(46, 20);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Total";
+            // 
+            // showTotalTextBox
+            // 
+            this.showTotalTextBox.Location = new System.Drawing.Point(635, 348);
+            this.showTotalTextBox.Name = "showTotalTextBox";
+            this.showTotalTextBox.Size = new System.Drawing.Size(207, 22);
+            this.showTotalTextBox.TabIndex = 0;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(354, 309);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(81, 20);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "% of Basic";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(354, 354);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(81, 20);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "% of Basic";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(955, 450);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label11);
@@ -315,12 +359,15 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.showButton);
             this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.showTotalTextBox);
             this.Controls.Add(this.showConveyanceTextBox);
             this.Controls.Add(this.conveyanceTextBox);
             this.Controls.Add(this.showMedicalTextBox);
@@ -371,6 +418,10 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox showTotalTextBox;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
 
