@@ -53,9 +53,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListOfObject", "ListOfObjec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubMemberInformation", "ClubMemberInformation\ClubMemberInformation.csproj", "{61C3F4CC-3B78-446E-93AF-E71F5721041A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static_Class_Method", "Static_Class_Method\Static_Class_Method.csproj", "{F105FEA1-2200-41FE-88CD-3211FE8D1A9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Static_Class_Method", "Static_Class_Method\Static_Class_Method.csproj", "{F105FEA1-2200-41FE-88CD-3211FE8D1A9D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Association_Relationship_One_To_One", "Association_Relationship_One_To_One\Association_Relationship_One_To_One.csproj", "{9ED21404-94D5-47CE-9EA1-CA33655B81B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Association_Relationship_One_To_One_Example2", "Association_Relationship_One_To_One_Example2\Association_Relationship_One_To_One_Example2.csproj", "{299E67D4-38E9-4C81-9531-268D59D9E273}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{9ED21404-94D5-47CE-9EA1-CA33655B81B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ED21404-94D5-47CE-9EA1-CA33655B81B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ED21404-94D5-47CE-9EA1-CA33655B81B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299E67D4-38E9-4C81-9531-268D59D9E273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299E67D4-38E9-4C81-9531-268D59D9E273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299E67D4-38E9-4C81-9531-268D59D9E273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299E67D4-38E9-4C81-9531-268D59D9E273}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
