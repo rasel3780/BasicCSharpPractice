@@ -10,5 +10,12 @@ namespace Inheritance_Example1
     {
         public string CompanyName { get; set; }
         public string CompanyContactNumber { get; set; }
+
+        public override double GetTotalPayable()
+        {
+            double totalPayable = base.GetTotalPayable();
+            double extraPayable = (totalPayable * 0.1) / 100;
+            return totalPayable + extraPayable;
+        }
     }
 }
