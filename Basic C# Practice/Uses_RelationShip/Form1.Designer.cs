@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.customerNameTextBox = new System.Windows.Forms.TextBox();
+            this.customerEmailTextBox = new System.Windows.Forms.TextBox();
+            this.accountNumbertextBox = new System.Windows.Forms.TextBox();
+            this.amountTextBox = new System.Windows.Forms.TextBox();
+            this.accountTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,43 +43,44 @@
             this.withdrawButton = new System.Windows.Forms.Button();
             this.customerSaveButton = new System.Windows.Forms.Button();
             this.customerInfoListBox = new System.Windows.Forms.ListBox();
+            this.showDetailsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // customerNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 22);
-            this.textBox1.TabIndex = 0;
+            this.customerNameTextBox.Location = new System.Drawing.Point(153, 84);
+            this.customerNameTextBox.Name = "customerNameTextBox";
+            this.customerNameTextBox.Size = new System.Drawing.Size(211, 22);
+            this.customerNameTextBox.TabIndex = 0;
             // 
-            // textBox2
+            // customerEmailTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 22);
-            this.textBox2.TabIndex = 0;
+            this.customerEmailTextBox.Location = new System.Drawing.Point(153, 131);
+            this.customerEmailTextBox.Name = "customerEmailTextBox";
+            this.customerEmailTextBox.Size = new System.Drawing.Size(211, 22);
+            this.customerEmailTextBox.TabIndex = 0;
             // 
-            // textBox3
+            // accountNumbertextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(153, 180);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 22);
-            this.textBox3.TabIndex = 0;
+            this.accountNumbertextBox.Location = new System.Drawing.Point(153, 180);
+            this.accountNumbertextBox.Name = "accountNumbertextBox";
+            this.accountNumbertextBox.Size = new System.Drawing.Size(211, 22);
+            this.accountNumbertextBox.TabIndex = 0;
             // 
-            // textBox4
+            // amountTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(153, 320);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(211, 22);
-            this.textBox4.TabIndex = 0;
+            this.amountTextBox.Location = new System.Drawing.Point(153, 320);
+            this.amountTextBox.Name = "amountTextBox";
+            this.amountTextBox.Size = new System.Drawing.Size(211, 22);
+            this.amountTextBox.TabIndex = 0;
             // 
-            // comboBox1
+            // accountTypeComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(153, 239);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(211, 24);
-            this.comboBox1.TabIndex = 1;
+            this.accountTypeComboBox.FormattingEnabled = true;
+            this.accountTypeComboBox.Location = new System.Drawing.Point(153, 232);
+            this.accountTypeComboBox.Name = "accountTypeComboBox";
+            this.accountTypeComboBox.Size = new System.Drawing.Size(211, 24);
+            this.accountTypeComboBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -111,7 +112,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(104, 244);
+            this.label4.Location = new System.Drawing.Point(104, 237);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 16);
             this.label4.TabIndex = 2;
@@ -143,6 +144,7 @@
             this.depositButton.TabIndex = 3;
             this.depositButton.Text = "Deposit";
             this.depositButton.UseVisualStyleBackColor = true;
+            this.depositButton.Click += new System.EventHandler(this.depositButton_Click);
             // 
             // withdrawButton
             // 
@@ -152,6 +154,7 @@
             this.withdrawButton.TabIndex = 3;
             this.withdrawButton.Text = "Withdraw";
             this.withdrawButton.UseVisualStyleBackColor = true;
+            this.withdrawButton.Click += new System.EventHandler(this.withdrawButton_Click);
             // 
             // customerSaveButton
             // 
@@ -161,6 +164,7 @@
             this.customerSaveButton.TabIndex = 3;
             this.customerSaveButton.Text = "Save";
             this.customerSaveButton.UseVisualStyleBackColor = true;
+            this.customerSaveButton.Click += new System.EventHandler(this.customerSaveButton_Click);
             // 
             // customerInfoListBox
             // 
@@ -168,14 +172,25 @@
             this.customerInfoListBox.ItemHeight = 16;
             this.customerInfoListBox.Location = new System.Drawing.Point(444, 84);
             this.customerInfoListBox.Name = "customerInfoListBox";
-            this.customerInfoListBox.Size = new System.Drawing.Size(344, 308);
+            this.customerInfoListBox.Size = new System.Drawing.Size(344, 196);
             this.customerInfoListBox.TabIndex = 4;
+            // 
+            // showDetailsButton
+            // 
+            this.showDetailsButton.Location = new System.Drawing.Point(519, 286);
+            this.showDetailsButton.Name = "showDetailsButton";
+            this.showDetailsButton.Size = new System.Drawing.Size(164, 23);
+            this.showDetailsButton.TabIndex = 5;
+            this.showDetailsButton.Text = "Show Details";
+            this.showDetailsButton.UseVisualStyleBackColor = true;
+            this.showDetailsButton.Click += new System.EventHandler(this.showDetailsButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.showDetailsButton);
             this.Controls.Add(this.customerInfoListBox);
             this.Controls.Add(this.customerSaveButton);
             this.Controls.Add(this.withdrawButton);
@@ -186,13 +201,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.accountTypeComboBox);
+            this.Controls.Add(this.amountTextBox);
+            this.Controls.Add(this.accountNumbertextBox);
+            this.Controls.Add(this.customerEmailTextBox);
+            this.Controls.Add(this.customerNameTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,11 +216,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox customerNameTextBox;
+        private System.Windows.Forms.TextBox customerEmailTextBox;
+        private System.Windows.Forms.TextBox accountNumbertextBox;
+        private System.Windows.Forms.TextBox amountTextBox;
+        private System.Windows.Forms.ComboBox accountTypeComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -215,6 +231,7 @@
         private System.Windows.Forms.Button withdrawButton;
         private System.Windows.Forms.Button customerSaveButton;
         private System.Windows.Forms.ListBox customerInfoListBox;
+        private System.Windows.Forms.Button showDetailsButton;
     }
 }
 
