@@ -81,6 +81,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IComparable_Example", "ICom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{433BEF7D-A9BF-42B8-AC48-A931B0887806}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection1", "Reflection1\Reflection1.csproj", "{A687D210-D10B-49BD-A300-12D09983B458}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{433BEF7D-A9BF-42B8-AC48-A931B0887806}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{433BEF7D-A9BF-42B8-AC48-A931B0887806}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{433BEF7D-A9BF-42B8-AC48-A931B0887806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A687D210-D10B-49BD-A300-12D09983B458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A687D210-D10B-49BD-A300-12D09983B458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A687D210-D10B-49BD-A300-12D09983B458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A687D210-D10B-49BD-A300-12D09983B458}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
